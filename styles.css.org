@@ -1,7 +1,15 @@
 <style>
-	.foo {
+	h1 {
 		color: blue;
+		text-align: left;
 	}
+	
+	h2 {
+		color: light blue;
+	}
+</style>
+
+<style>
 	
 	table {
         border: 2px solid black;
@@ -19,9 +27,5 @@
         background-color: lightgray;
     }
 	
-	h1 {
-		color: blue;
-		text-align: left;
-	}
-	
+
 </style>
