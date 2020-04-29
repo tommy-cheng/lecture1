@@ -2,31 +2,44 @@
 <html>
     <head>
         <title>Tommy Cheng</title>
-		<link rel="stylesheet" href="styles.css">
+		<! link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!link rel="stylesheet" href="styles.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
 		<h1> Personal Information </h1>
-		<p>
-		<img src="tommy-2.jpg" alt="tommy picture" width="20%">
-		</p>
-		
-		<ul>
-			<li> Martial status: Yes </li>
-			<li> Number of Children: 2 </li>
-			<li> Nationality: Taiwan, ROC </li>
-			<li> Age: 57 </li>
-			<li> Date of birth: Oct, 17, 1962 </li>	
-			<li> Email: tommy.cfc.cheng@gmail.com </li>
-			<li> Phone: +886-922-928105
-		</ul>
+		<div class = "container-fluid">
+			<div class="row">				
+				<div class="col">
+					<ul class="list-group">
+					<li class="list-group-item"> Martial status: Yes </li>
+					<li class="list-group-item"> Number of Children: 2 </li>
+					<li class="list-group-item"> Nationality: Taiwan, ROC </li>
+					<li class="list-group-item"> Age: 57 </li>
+					<li class="list-group-item"> Date of birth: Oct, 17, 1962 </li>	
+					<li class="list-group-item"> Email: tommy.cfc.cheng@gmail.com </li>
+					<li class="list-group-item"> Phone: +886-922-928105</li>
+					</ul>
+				</div>
+				<div class="col"><img src="tommy-2.jpg" class="img-thumbnail" alt="tommy picture" width="30%"></div>
+			</div>
+		</div>
 		<h1> Education </h1>
-		<table>
+		<table class="table">
+			<thead class="thead-dark">
             <tr>
                 <th>Date Atteneded</th>
                 <th>Institute Name</th>
                 <th>City</th>
 				<th>Degree/Major</th>
             </tr>
+			</thead>
+			<tbody>
             <tr>
                 <td>Sep/1985~Jun/1987</td>
                 <td>National Taiwan University Of Science and Technology</td>
@@ -39,10 +52,12 @@
                 <td>Taipei, Taiwan</td>
 				<td>Master/Computer Science</td>
             </tr>
+			</tbody>
 		</table>
 		<h1>Work experience</h1>
+			<div class="container-fluid p-3 my-3 bg-primary text-white">
 			<h2>May/2017~Jan/2020, Edimax Senior Director</h2>
-			<p class="foo"> I was invited to join Edimax to lead IOT department for the brand name customer - 
+			<p> I was invited to join Edimax to lead IOT department for the brand name customer - 
 			Honeywell to build IP Camera cloud recording using AWS platform w/ PKI security. 
 			The whole ECO system has been operating since Oct, 2017. We build the IP camera and most 
 			of cloud system except user manager, provision server which own by Honeywell. There are 3 
@@ -58,6 +73,8 @@
 				<li>Around 300K camera ship to Honeywell</li>
 				<li>Cloud recording w/ PKI security infrastructure operation since beginning of 2018, the availability rate is 99.9%+ for 80K cameras online</li>
 			</ul>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-dark text-white">
 			<h2>May 2009~May 2017, AmTRAN Senior Director</h2>
 			<p class="foo"> I was invited to join in AmTRAN as a senior director responsible for the 1st 
 			connect TV of VIZIO –VIA Yahoo TV since 2009 at beginning. The 1st generation of VIA TV is 
@@ -92,6 +109,8 @@
 						<li>AvartarMind Robot</li>
 					</ul>
 			</ul>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-primary text-white">
 			<h2>Sep/2008~May/2009, Mototech Corp. Senior Manager</h2>
 			<p class="foo">The main biz segment of Mototech is the ODM manufacturer for Cisco cable and satellite SETOP box. 
 			I was a senior manager leading a team to work w/ Cisco Atlanta and India team for Hong Kong Cable satellite box 
@@ -101,6 +120,8 @@
 			<p>We spent about 6 months working w/ Cisco US and India team and 2 months of comprehensive test at HKC operation 
 			center. We successfully replace the original Nargra box to Cisco box.
 			</p>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-dark text-white">
 			<h2>Oct/2006~Sep/2008, AMD Corp. Technical Lead for DTV Taiwan</h2>
 			<p>I am a technical lead of DTV division of Taiwan region. There are FAE, AE and PM groups under my management.
 			The major mission is to sell Xillion family chips – X240, X241, X243, X245 w/ turn-key ATSC solution for TWN 
@@ -115,6 +136,8 @@
 			<p>During 2 years service in AMD DTV division. We had sold more than 3 million Xillion chips to Delta, Foxconn, 
 			Winstron, Digimedia, Tatung for OEM/Brand name customers Westinghouse, Syntax and VIZIO accordingly. 
 			</p>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-primary text-white">
 			<h2>Aug/2005~Oct/2006, Accton Technology Corp. Senior Manager</h2>
 			<p class="foo">I am a leader of platform/driver team of CE S/W division in Accton. The main developed product 
 			is WiFi SkypePhone. The WiFi SkypePhone was based on TI OMAP1710 , Marvell 8385 platform and embedded linux OS. 
@@ -125,6 +148,8 @@
 			<p>The WiFi SkypePhone developed in Accton was the first handheld device that passed the Skype formal validation 
 			process in the world.
 			</p>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-dark text-white">
 			<h2>Dec/1997~Aug/2005, Proton Communication Technology Corp. Director</h2>
 			<p class="foo"> PCT is the child corp. of Proton’s group in Taiwan, The mission of PCT was research and develop 
 			new advance digital consumer products for the Proton group. There are several products I had involved for this 
@@ -149,6 +174,8 @@
 			and IDTV had been sold all over the world. In the mean time, Both of the VideoPhone and LCD-TV had won the Nation Award of Excellence 
 			in Taiwan during the product release year.
 			</p>
+			</div>
+			<div class="container-fluid p-3 my-3 bg-primary text-white">
 			<h2>Jul/1989 ~ Aug/1996, Institute For Information Industry, Manager</h2>
 			<p class="foo">Institute For Information Industry is the semi-government organization in Taiwan, the major mission for 
 			III is to research and development the new IT technology and transfer it to the industry. During the period of working 
@@ -165,7 +192,10 @@
 			By through the bundle with modem to access ISP service provider,  the product name called WinSpan lite – TCP/IP package with PPP dial 
 			up only running on Win3.x. The WinSpan lite should sell about several hundred thousand copies  in the modem bundle business market.
 			</p>
+			</div>
 			<h1>Expertise</h1>
+			<div class="jumbotron jumbotron-fluid">
+			<div class="container-fluid">
 			<ul>
 				<li>Strong Technical Background</li>
 				<li>Embedded system programming</li>
@@ -204,5 +234,7 @@
 					<li>https://www.coursera.org/learn/machine-learning - Stanford University - Score： 95.3%</li>
 					<li>https://www.coursera.org/learn/mobile-robot - Georgia Tech University - Score： 91.6%</li>
 				</ul>
+			</div>
+			</div>
     </body>
 </html>
